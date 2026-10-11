@@ -1,0 +1,11 @@
+# Файлы с «отпечатком» в имени никогда не меняются — пусть телефон
+# держит их в кэше и открывает сайт мгновенно при следующих заходах.
+/_expo/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# А сама страница — всегда свежая.
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
